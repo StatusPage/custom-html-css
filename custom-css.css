@@ -16,12 +16,8 @@
 
 #custom-header nav > a {
   margin-right: 30px;
-  float:right;
 }
 
-#custom-header .updates-dropdown-container {
-  float:right;
-}
 
 #custom-header nav > a, #custom-header .show-updates-dropdown {
   color: #FFF;
@@ -33,16 +29,13 @@
   letter-spacing: 1px;
 }
 
-#custom-header nav > a:nth-child(1):before {
-  // content:"StatusPage.io ";
-}
 
 .updates-dropdown {
   right: 0px;
 }
 
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 750px) {
   
   #custom-header .logo-container {
     position:relative;
@@ -51,7 +44,7 @@
   
   #custom-header nav > a {
     position:relative;
-    top:11px;
+    top:1px;
   }
   #custom-header .show-updates-dropdown {
     padding:9px 18px 8px;
@@ -67,7 +60,7 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
   #custom-header {
     text-align:center;
     padding-left:5%;
@@ -82,7 +75,7 @@
   }
   
   #custom-header .logo {
-    max-width:150px;
+    max-width:250px;
     display:inline-block;
   }
   
