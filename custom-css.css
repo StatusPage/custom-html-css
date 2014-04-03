@@ -1,0 +1,183 @@
+#custom-header {
+  background-color:#fff;
+  padding:24px 40px 23px;
+  position:relative;
+  border-bottom:1px solid #e0e0e0;
+}
+
+#custom-header .logo-container {
+  float:left;
+  max-width:250px;
+}
+
+#custom-header nav {
+  float:right;
+}
+
+#custom-header nav > a {
+  margin-right: 30px;
+  float:right;
+}
+
+#custom-header .updates-dropdown-container {
+  float:right;
+}
+
+#custom-header nav > a, #custom-header .show-updates-dropdown {
+  color: #FFF;
+  display:inline-block;
+  font-weight: 500;
+  color: #AFAFAF;
+  font-size: .875rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#custom-header nav > a:nth-child(1):before {
+  // content:"StatusPage.io ";
+}
+
+.updates-dropdown {
+  right: 0px;
+}
+
+
+@media screen and (min-width: 700px) {
+  
+  #custom-header .logo-container {
+    position:relative;
+    top:2px;
+  }
+  
+  #custom-header nav > a {
+    position:relative;
+    top:11px;
+  }
+  #custom-header .show-updates-dropdown {
+    padding:9px 18px 8px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    -ms-border-radius:4px;
+    border-radius:4px;
+    border:2px solid rgba(175,175,175,.5);
+  }
+  
+  #custom-header .show-updates-dropdown:hover {
+    border-color:rgba(175,175,175,.8);  
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #custom-header {
+    text-align:center;
+    padding-left:5%;
+    padding-right:5%;
+  }
+  
+  #custom-header .logo-container {
+    float:none;
+    display:block;
+    margin-bottom:21px;
+    max-width:none;
+  }
+  
+  #custom-header .logo {
+    max-width:150px;
+    display:inline-block;
+  }
+  
+  #custom-header nav {
+    float:none;
+  }
+  
+  #custom-header nav > a, #custom-header .updates-dropdown-container {
+    float:none;
+  }
+  
+}
+
+@media screen and (max-width: 475px) {
+  #custom-header nav > a:nth-child(1):before {
+    content:none;
+  }
+}
+
+
+
+
+
+#custom-footer {
+  padding:20px 40px;
+  color:#888; 
+  font-size:14px;
+  background-color:#333434;
+}
+
+#custom-footer .logo {
+  max-width:150px;
+  display:inline-block;
+}
+
+#custom-footer > div {
+  position:relative;
+  top:2px;
+}
+
+#custom-footer .meta {
+  float:right;
+}
+
+#custom-footer .links {
+  float:right;
+  margin-left:30px;
+}
+
+#custom-footer .links a {
+  color:#bbb;
+  display:inline-block;
+  margin-left:8px;
+}
+
+#custom-footer .links a:hover {
+  color:#ddd;
+}
+
+#custom-footer .links a:first-of-type {
+  margin-left:0px;
+}
+
+@media screen and (max-width: 880px) {
+  #custom-footer {
+    overflow:hidden;
+  }
+  
+  #custom-footer > div {
+    top:0px;
+  }
+  
+  #custom-footer .links {
+    margin-left:0px;
+  }
+  
+  #custom-footer .meta {
+    float:left;
+  }
+  
+  #custom-footer .logo {
+    display:none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #custom-footer {
+    text-align:center;
+  }
+  
+  #custom-footer .meta, #custom-footer .links {
+    float:none;
+  }
+  
+  #custom-footer .links {
+    margin-bottom:5px;
+  }
+}
