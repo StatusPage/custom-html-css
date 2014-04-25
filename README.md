@@ -1,4 +1,4 @@
-custom-html-css
+Custom HTML/CSS
 ===============
 
-A template for using custom HTML and CSS
+This template serves as a jumping off point for using a Custom Header and Footer for StatusPage.io.
