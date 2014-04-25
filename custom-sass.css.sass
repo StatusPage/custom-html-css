@@ -1,0 +1,133 @@
+=border-radius($pixels)
+  border-radius: $pixels
+  -moz-border-radius: $pixels
+  -webkit-border-radius: $pixels
+  -o-border-radius: $pixels
+  -ms-border-radius: $pixels
+
+#custom-header
+  background-color: #fff
+  padding: 24px 40px 23px
+  position: relative
+  border-bottom: 1px solid #e0e0e0
+  .logo-container
+    float: left
+    max-width: 250px
+
+  nav
+    float: right
+    & > a
+      margin-right: 30px
+
+    & > a, .show-updates-dropdown
+      color: #FFF
+      display: inline-block
+      font-weight: 500
+      color: #AFAFAF
+      font-size: .875rem
+      text-transform: uppercase
+      letter-spacing: 1px
+
+  .updates-dropdown
+    right: 0px
+
+
+  @media screen and (min-width: 750px)
+    .logo-container
+      position: relative
+      top: 2px
+
+    nav > a
+      position: relative
+      top: 1px
+
+    .show-updates-dropdown
+      +border-radius(4px)
+      padding: 9px 18px 8px
+      border: 2px solid rgba(175,175,175,.5)
+      &:hover
+        border-color: rgba(175,175,175,.8)  
+
+
+  @media screen and (max-width: 750px)
+    text-align: center
+    padding-left: 5%
+    padding-right: 5%
+    .logo-container
+      float: none
+      display: block
+      margin-bottom: 21px
+      max-width: none
+      .logo
+        max-width: 250px
+        display: inline-block
+
+    nav
+      float: none
+
+    nav > a, .updates-dropdown-container
+      float: none
+
+
+  @media screen and (max-width: 475px)
+    nav > a:nth-child(1):before
+      content: none
+
+
+
+
+
+
+#custom-footer
+  padding: 20px 40px
+  color: #888 
+  font-size: 14px
+  background-color: #333434
+
+  .logo
+    max-width: 150px
+    display: inline-block
+
+  & > div
+    position: relative
+    top: 2px
+
+  .meta
+    float: right
+
+  .links
+    float: right
+    margin-left: 30px
+    a
+      color: #bbb
+      display: inline-block
+      margin-left: 8px
+      &:hover
+        color: #ddd
+
+      &:first-of-type
+        margin-left: 0px
+
+
+  @media screen and (max-width: 880px)
+    overflow: hidden
+    & > div
+      top: 0px
+
+    .links
+      margin-left: 0px
+
+    .meta
+      float: left
+
+    .logo
+      display: none
+
+
+  @media screen and (max-width: 600px)
+    text-align:center
+    .meta, .links
+      float: none
+
+    .links
+      margin-bottom: 5px
