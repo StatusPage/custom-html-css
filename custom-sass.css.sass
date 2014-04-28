@@ -12,7 +12,7 @@
   border-bottom: 1px solid #e0e0e0
   .logo-container
     float: left
-    max-width: 250px
+    max-width: 325px
 
   nav
     float: right
@@ -32,10 +32,10 @@
     right: 0px
 
 
-  @media screen and (min-width: 750px)
+  @media screen and (min-width: 900px)
     .logo-container
       position: relative
-      top: 2px
+      top: 7px
 
     nav > a
       position: relative
@@ -49,17 +49,18 @@
         border-color: rgba(175,175,175,.8)  
 
 
-  @media screen and (max-width: 750px)
+  @media screen and (max-width: 900px)
     text-align: center
     padding-left: 5%
     padding-right: 5%
+    padding-bottom: 18px
     .logo-container
       float: none
       display: block
-      margin-bottom: 21px
+      margin-bottom: 18px
       max-width: none
       .logo
-        max-width: 250px
+        max-width: 325px
         display: inline-block
 
     nav
@@ -70,6 +71,14 @@
 
 
   @media screen and (max-width: 475px)
+    nav 
+      & > a
+        margin-right: 20px;
+      & > a, .show-updates-dropdown 
+        font-size: 13px
+    .logo-container .logo 
+      max-width: 70%; 
+    
     nav > a:nth-child(1):before
       content: none
 
@@ -101,7 +110,7 @@
     a
       color: #bbb
       display: inline-block
-      margin-left: 8px
+      margin-left: 20px
       &:hover
         color: #ddd
 
@@ -126,6 +135,8 @@
 
   @media screen and (max-width: 600px)
     text-align:center
+    font-size: 13px
+    line-height: 20px
     .meta, .links
       float: none
 

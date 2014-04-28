@@ -7,7 +7,7 @@
 
 #custom-header .logo-container {
   float:left;
-  max-width:250px;
+  max-width:325px;
 }
 
 #custom-header nav {
@@ -17,7 +17,6 @@
 #custom-header nav > a {
   margin-right: 30px;
 }
-
 
 #custom-header nav > a, #custom-header .show-updates-dropdown {
   color: #FFF;
@@ -29,17 +28,15 @@
   letter-spacing: 1px;
 }
 
-
-.updates-dropdown {
+#custom-header .updates-dropdown {
   right: 0px;
 }
 
 
-@media screen and (min-width: 750px) {
-  
+@media screen and (min-width: 900px) {
   #custom-header .logo-container {
     position:relative;
-    top:2px;
+    top:7px;
   }
   
   #custom-header nav > a {
@@ -60,22 +57,24 @@
   }
 }
 
-@media screen and (max-width: 750px) {
+
+@media screen and (max-width: 900px) {
   #custom-header {
     text-align:center;
     padding-left:5%;
     padding-right:5%;
+    padding-bottom:18px;
   }
   
   #custom-header .logo-container {
     float:none;
     display:block;
-    margin-bottom:21px;
+    margin-bottom:18px;
     max-width:none;
   }
   
-  #custom-header .logo {
-    max-width:250px;
+  #custom-header .logo-container .logo {
+    max-width:325px;
     display:inline-block;
   }
   
@@ -89,7 +88,17 @@
   
 }
 
+
 @media screen and (max-width: 475px) {
+  #custom-header nav > a {
+    margin-right:20px; 
+  }
+  #custom-header nav > a, #custom-header nav .show-updates-dropdown {
+    font-size:13px;
+  }
+  #custom-header .logo-container .logo {
+    max-width:70%; 
+  }
   #custom-header nav > a:nth-child(1):before {
     content:none;
   }
@@ -128,7 +137,7 @@
 #custom-footer .links a {
   color:#bbb;
   display:inline-block;
-  margin-left:8px;
+  margin-left:20px;
 }
 
 #custom-footer .links a:hover {
@@ -164,6 +173,8 @@
 @media screen and (max-width: 600px) {
   #custom-footer {
     text-align:center;
+    font-size:13px;
+    line-height:20px;
   }
   
   #custom-footer .meta, #custom-footer .links {
